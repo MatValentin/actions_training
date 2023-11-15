@@ -1,8 +1,8 @@
-name: CI Build for Docker Actions
+name: CI Build for Docker Action
 on:
   push:
-    branches: [main]
-    paths: [hello-world-docker-action/**]
+    branches: [ main ]
+    paths: [ hello-world-docker-action/** ]
   workflow_dispatch:
 
 jobs:
@@ -19,4 +19,4 @@ jobs:
           who-to-greet: '@MatValentin'
 
       - name: Output time set in the container
-        run: echo "The time was ${{ steps.hello-action.outputs.time}} when the action said hello"
+        run: echo "The time was ${{ steps.hello-action.outputs.time }} when the action said hello"
